@@ -2,8 +2,8 @@
 # 🚀 Upload Image to S3 bằng API Gateway và Lambda
 
 📌 **Người thực hiện:** Vũ Yên Định  
-🆔 **MSSV:** [Điền mã số]  
-🏫 **Trường:** [Tên trường]  
+🆔 **MSSV:** [2180602169]  
+🏫 **Trường:** [HUTECH]  
 📅 **Ngày thực hiện:** 07/07/2025
 
 ---
