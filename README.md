@@ -48,7 +48,7 @@
 | Đối tượng   | Ảnh hưởng                  |
 |-------------|----------------------------|
 | Developer   | Tốn thời gian viết backend |
-| Doanh nghiệp | Tăng chi phí & thời gian   |
+| Doanh nghiệp| Tăng chi phí & thời gian  |
 
 ### 💥 1.4 Business Consequences
 - Giảm tốc độ triển khai sản phẩm.
