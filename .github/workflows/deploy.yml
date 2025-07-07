@@ -3,7 +3,7 @@ name: 🚀 Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Hoặc 'master' tùy branch bạn dùng
+      - main  # hoặc master, tùy repo
 
 permissions:
   contents: read
@@ -12,19 +12,22 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Setup Pages
+      - name: ⚙️ Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: ⚙️ Build Site (no build needed for markdown)
-        run: echo "No build step needed"
-
-      - name: 🚀 Upload Pages Artifact
+      - name: 📤 Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'  # nơi chứa README.md
 
-      - name: 🛰 Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v3
